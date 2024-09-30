@@ -1,39 +1,3 @@
-![](https://github.com/open-rmf/free_fleet/workflows/build/badge.svg)
-
-# Free Fleet
-
-## Contents
-
-- **[About](#About)**
-- **[Installation Instructions](#installation-instructions)**
-  - [Prerequisites](#prerequisites)
-  - [Message Generation](#message-generation)
-  - [Client in ROS 1](#client-in-ros-1)
-  - [Client and Server in ROS 2](#client-and-server-in-ros-2)
-- **[Examples](#examples)**
-  - [Barebones Example](#barebones-example)
-  - [Turtlebot3 Fleet Server](#turtlebot3-fleet-server)
-  - [ROS 1 Turtlebot3 Simulation](#ros-1-turtlebot3-simulation)
-  - [ROS 2 Turtlebot3 Simulation](#ros-2-turtlebot3-simulation)
-  - [ROS 1 Multi Turtlebot3 Simulation](#ros-1-multi-turtlebot3-simulation)
-  - [Commands and Requests](#commands-and-requests)
-- **[Plans](#plans)**
-
-</br>
-</br>
-
-## About
-
-Welcome to `free_fleet`, an open-source robot fleet management system. 
-Sometimes it is called the "Fun Free Fleet For Friends" (F5).
-
-**Note**, this repository is under active development. Things will be quite unstable
-for a while. Please open an issue ticket on this repo if you have problems.
-Cheers.
-
-</br>
-</br>
-
 ## Installation Instructions
 
 ### Prerequisites
@@ -86,6 +50,8 @@ rosdep install --from-paths src --ignore-src --rosdistro noetic -yr
 Source ROS 1 and build,
 
 ```bash
+gedit ~/.bashrc
+source ~/ff_ros1_ws/install/setup.bash  # Add this line below source ~/catkin_ws/devel/setup.bash
 cd ~/ff_ros1_ws
 source /opt/ros/noetic/setup.bash
 colcon build
