@@ -52,6 +52,7 @@ Source ROS 1 and build,
 ```bash
 gedit ~/.bashrc
 source ~/ff_ros1_ws/install/setup.bash  # Add this line below source ~/catkin_ws/devel/setup.bash
+# sudo apt install python3-colcon-common-extensions  # Uncomment if you install colcon
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash   # Add this line below source ~/ff_ros1_ws/install/setup.bash if colcon not complete "build"
 cd ~/ff_ros1_ws
 source /opt/ros/noetic/setup.bash
